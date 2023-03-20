@@ -1,0 +1,29 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-toolbar>
+    <button type="button" mat-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <span>My Application</span>
+    <button
+      routerLink="/logout"
+      mat-icon-button
+      class="example-icon favorite-icon"
+      aria-label="Example icon-button with heart icon"
+    >
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <button class="logoButton"></button>
+    <p>Menu</p>
+    <p *ngIf="showFiller">Productos</p>
+    <p *ngIf="showFiller">Categoria</p>
+    <p *ngIf="showFiller">Agregar producto</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Expandir menu
+    </button>
+  </mat-drawer>
+
+  <div class="example-sidenav-content"></div>
+</mat-drawer-container>

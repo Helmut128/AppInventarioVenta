@@ -1,0 +1,19 @@
+.example-container{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.example-sidenav{
+  background-color: #363B41;
+  color: white;
+}
+
+.logoButton{
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #363B41;
+  /* background-image: url('C:\Users\na.aguilar\Desktop\app-Venta-Inventario\frontend\src\assets\img\usuario.png'); */
+
+}
